@@ -5,6 +5,8 @@ if [ -d /bundle ]; then
   tar xzf *.tar.gz
   cd /bundle/bundle/programs/server/
   npm install --unsafe-perm
+  npm install fs-extra
+  npm install file-type
   cd /bundle/bundle/
 elif [[ $BUNDLE_URL ]]; then
   cd /tmp
